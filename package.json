@@ -1,0 +1,61 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Sahil Sharma - Portfolio",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Run your test cases\"",
+    "lint": "eslint --ext .jsx,.js -c .eslintrc \"./src/**/*.{js,jsx}\"",
+    "format": "eslint src --ext .js --ext .json --fix && prettier --write \"**/*.{css,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilsharma2408/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "performance",
+    "gatsby",
+    "blog",
+    "mdx"
+  ],
+  "author": "\"react\",",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilsharma2408/Portfolio/issues"
+  },
+  "homepage": "https://github.com/sahilsharma2408/Portfolio#readme",
+  "dependencies": {
+    "gatsby": "^2.22.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@ganapativs/eslint-config-react": "^0.0.9",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1"
+  }
+}
