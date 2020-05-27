@@ -46,9 +46,18 @@
   },
   "homepage": "https://github.com/sahilsharma2408/Portfolio#readme",
   "dependencies": {
+    "bootstrap": "3.x",
     "gatsby": "^2.22.9",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19",
+    "react-helmet": "^5.2.1",
+    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-typography": "^2.3.24",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-yaml": "^2.2.23"
   },
   "devDependencies": {
     "@ganapativs/eslint-config-react": "^0.0.9",

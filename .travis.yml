@@ -13,7 +13,6 @@ node_js:
 env:
   global:
     - BUILD_DIR=public
-    - GITHUB_TOKEN=04aabe50c78c33adc45d20d0726a7464e6b5b802
     - SURGE_LOGIN=sahil@sendinblue.com
     - SURGE_TOKEN=fcacb5701106fbea8a530209707a2482
 
@@ -22,10 +21,10 @@ env:
 stages:
   - name: install
     if: tag IS blank
-  # - name: lint
-  #   if: tag IS blank
-  # - name: test
-  #   if: tag IS blank
+  - name: lint
+    if: tag IS blank
+  - name: test
+    if: tag IS blank
   - name: build
     if: tag IS blank
 
@@ -34,28 +33,19 @@ jobs:
     - stage: install
       install: yarn install
       script: yarn install
-    # - stage: lint
-    #   name: JavaScript
-    #   script: yarn run lint
-    # - stage: test
-    #   name: JavaScript
-    #   script: yarn run test
+    - stage: lint
+      name: JavaScript
+      script: yarn run lint
+    - stage: test
+      name: JavaScript
+      script: yarn run test
     - stage: build
       name: Portfolio
       script: yarn run build
-      # deploy:
-      #   provider: pages
-      #   github-token: $GITHUB_TOKEN
-      #   skip_cleanup: true
-      #   keep-history: true
-      #   local_dir: $BUILD_DIR
-      #   on:
-      #     tags: true
       deploy:
         provider: surge
         project: ./public/
-        domain: sahilsharma.surge.sh
         skip_cleanup: true
+        domain: sahilsharma.surge.sh
         on:
-          # all_branches: true
-          branch: Feature_Building_Portfolio
+          branch: master
