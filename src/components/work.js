@@ -23,7 +23,7 @@ const Work = ({ works }) => {
                 </span>
               </h4>
               <div className="website pull-right">
-                <a href="{work.url}">{work.url}</a>
+                <a href={work.url}>{work.url}</a>
               </div>
               <div className="position">{work.position}</div>
               <div className="summary">

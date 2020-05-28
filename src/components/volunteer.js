@@ -16,7 +16,7 @@ const Volunteer = ({ volunteers }) => (
               </span>
             </h4>
             <div className="website pull-right">
-              <a href="{volunteer.url}">{volunteer.url}</a>
+              <a href={volunteer.url}>{volunteer.url}</a>
             </div>
             <div className="position">{volunteer.position}</div>
             <div className="summary">

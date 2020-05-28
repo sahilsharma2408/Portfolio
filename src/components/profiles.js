@@ -14,7 +14,7 @@ const Profiles = ({ profiles }) => (
               <div className="username">
                 {profile.url ? (
                   <div className="url">
-                    <a href="{profile.url}">{profile.username}</a>
+                    <a href={profile.url}>{profile.username}</a>
                   </div>
                 ) : (
                   <span>{profile.username}</span>
