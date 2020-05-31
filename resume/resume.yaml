@@ -1,0 +1,152 @@
+---
+basics:
+  name: Sahil Sharma
+  label: Software Developer
+  image: ''
+  email: ss2408.inbox.gmail.com jobss.sahil@gmail.com
+  phone: "+91 70185-37638"
+  url: https://sahilsharma.netlify.app/
+  summary: Passionate full-stack engineer with 2+ years of professional experience. 
+           Builds scalable modern apps using react & node technologies and has a strong sense of aesthetics & interaction. 
+           Loves contributing to open source.
+  profiles:
+  - network: Gitbub
+    username: sahilsharma2408
+    url: https://github.com/sahilsharma2408
+
+  - network: Twitter
+    username: Sahil01096426
+    url: https://twitter.com/Sahil01096426
+
+  - network: LinkedIn
+    username: sahilsharma241993
+    url: https://www.linkedin.com/in/sahilsharma241993
+work:
+- name: Sendinblue
+  location: Noida, India
+  description: Email Marketing company
+  position: Software Developer
+  url: https://www.sendinblue.com
+  startDate: '2019-04-01'
+  endDate: '2020-05-01'
+  summary: Sendinblue is a SaaS solution for relationship marketing.
+           It offers a cloud-based marketing communication software suite with email marketing, transactional email, 
+           marketing automation, customer-relationship management, landing pages, Facebook ads, retargeting ads, SMS marketing, and more
+  highlights:
+  - Shaping the product experience by working closely with the product team
+  - Developing performant infrastructures and build system for faster deployments
+  - Creating reusable React components and libraries
+  - Experiement and bring in new frontend technologies into the stack
+  - Mentor and manage a small team of developers
+- name: Tracxn
+  location: Bangalore, India
+  description:  Data-driven research platform that provides business updates and insights about startup companies
+  position: Software Developer
+  url: https://tracxn.com/
+  startDate: '2018-05-18'
+  endDate: '2019-03-31'
+  summary: Tracxn is the research partner for Venture Capitalists and 
+           Corporate Development offices powered by the largest Startup Data platform tracking over 10m companies globally.
+  highlights:
+  - Responsible for implementing the various business requirements with the use of various technologies such as React JS, Node JS.
+  - Using various Micro services to consume data from different endpoints and make computation on the same to represent it effectively.
+  - Implemented various features using advance react patterns, express framework for REST API and flex-box, bootstrap for web designing.
+  - Perform regression and system level testing to verify software quality and function before it is released.
+  - Implemented Git + Git-Lab for version control.
+- name: Infosys
+  location: Bangalore, India
+  description:  Consulting It Services
+  position: Software Developer
+  url: https://www.infosys.com/
+  startDate: '2017-07-01'
+  endDate: '2018-05-18'
+  summary: Infosys Limited, is a global multinational corporation that provides business consulting, information technology and outsourcing services
+  highlights:
+  - Responsible for designing the front-end pages of the application using React JS.
+  - Responsible for designing the different components.
+  - Responsible for designing the services associated with it and managing the flow of data using Reflux/Redux library which is used as a central repository for data management.
+  - Implemented a token-based approach for the User Login and Authentication System.
+  - Responsible for testing the modules built.
+education:
+- institution: Jaypee University of Information & Technology
+  area: Computer Science
+  studyType: Bachelor of Technology
+  startDate: '2013-05-01'
+  endDate: '2017-05-01'
+  cgpa: '7.6'
+  courses:
+  - Data Structures
+  - Algorithms
+awards:
+- title: Digital Compression Pioneer Award
+  date: '2014-11-01'
+  awarder: Techcrunch
+  summary: There is no spoon.
+publications:
+- name: Video compression for 3d media
+  publisher: Hooli
+  releaseDate: '2014-10-01'
+  url: http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)
+  summary: Innovative middle-out compression algorithm that changes the way we store
+    data.
+skills:
+- name: Web Development
+  level: Master
+  keywords:
+  - HTML5
+  - CSS
+  - Javascript
+  - React
+  - ECMAScript 6
+  - Flexbox
+- name: Backend
+  level: Intemediate
+  keywords:
+  - Node.js
+  - Express
+  - Java
+- name: Database
+  level: Intemediate
+  keywords:
+  - Mongodb
+languages:
+- language: English
+  fluency: Fluent
+- language: Hindi
+  fluency: Native speaker
+interests:
+- name: Sports
+  keywords:
+  - Cricket
+  - Table Tennis
+- name: Travelling
+  keywords:
+  - Tracking
+  - Explore new places
+declaration:
+- name: Sahil Sharma
+  quote: I hereby solemnly declare that all the statements made above are true and correct to the best of my knowledge and belief.
+projects:
+- name: Miss Direction
+  description: A mapping engine that misguides you
+  highlights:
+  - Won award at AIHacks 2016
+  - Built by all women team of newbie programmers
+  - Using modern technologies such as GoogleMaps, Chrome Extension and Javascript
+  keywords:
+  - GoogleMaps
+  - Chrome Extension
+  - Javascript
+  startDate: '2016-08-24'
+  endDate: '2016-08-24'
+  url: missdirection.example.com
+  roles:
+  - Team lead
+  - Designer
+  entity: Smoogle
+  type: application
+meta:
+  canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
+  version: v1.0.0
+  lastModified: '2017-12-24T15:53:00'
+

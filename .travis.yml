@@ -1,0 +1,51 @@
+dist: trusty
+language: node_js
+dist: xenial
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - "10.13.0"
+
+env:
+  global:
+    - BUILD_DIR=public
+    - SURGE_LOGIN=sahil@sendinblue.com
+    - SURGE_TOKEN=fcacb5701106fbea8a530209707a2482
+
+# install: skip
+
+stages:
+  - name: install
+    if: tag IS blank
+  - name: lint
+    if: tag IS blank
+  - name: test
+    if: tag IS blank
+  - name: build
+    if: tag IS blank
+
+jobs:
+  include:
+    - stage: install
+      install: yarn install
+      script: yarn install
+    - stage: lint
+      name: JavaScript
+      script: yarn run lint
+    - stage: test
+      name: JavaScript
+      script: yarn run test
+    - stage: build
+      name: Portfolio
+      script: yarn run build
+      deploy:
+        provider: surge
+        project: ./public/
+        skip_cleanup: true
+        domain: sahilsharma.surge.sh
+        on:
+          branch: master
