@@ -2,9 +2,9 @@
 
 Live website: [sahilsharma.netlify.app](https://sahilsharma.netlify.app/) [sahilsharma.surge.sh](http://sahilsharma.surge.sh/)
 
-[![Travis Build Status][build-badge]][build]
+[![Travis Build Status][build-badge]][travis-build]
+[![Netlify Status][netlify-build-badge]][netlify-build]
 [![PRs Welcome][prs-badge]][prs] 
-[![Code of Conduct][coc-badge]][coc]
 
 
 ## Available Scripts
@@ -38,16 +38,19 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
 
 <!-- prettier-ignore-start -->
 [build-badge]: https://travis-ci.com/DTSL/fe_components.svg?token=yrWAk98dJjTpvzia481d&branch=master
+[netlify-build-badge]:https://api.netlify.com/api/v1/badges/17af2b01-b4c5-4c88-ba29-cbe0e0fd51fa/deploy-status
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[travis-build]: https://travis-ci.org/github/sahilsharma2408/Portfolio
+[netlify-build]: https://app.netlify.com/teams/sahilsharma2408/builds/
+[prs]: https://github.com/sahilsharma2408/Portfolio/blob/master/README.md#submitting-pull-requests
+
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
 [yarn]: https://yarnpkg.com/
-[build]: https://travis-ci.org/kentcdodds/bookshelf
 [license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
 [license]: https://github.com/kentcdodds/bookshelf/blob/master/README.md#license
-[prs]: http://makeapullrequest.com
 [coc]: https://github.com/kentcdodds/bookshelf/blob/master/CODE_OF_CONDUCT.md
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 [all-contributors]: https://github.com/kentcdodds/all-contributors
