@@ -3,6 +3,7 @@ const config = require('./config/website');
 module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl,
+    siteName: config.siteName,
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
@@ -24,16 +25,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        path: `./resume`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./resume`,
+        name: `markdown-pages`,
+        path: `${__dirname}/content/blog`,
       },
     },
   ],

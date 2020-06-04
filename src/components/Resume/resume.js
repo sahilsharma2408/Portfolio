@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Contact from './contact';
 import About from './about';
@@ -13,8 +14,6 @@ import Skills from './skills';
 import Languages from './languages';
 import Interests from './interests';
 import References from './references';
-
-// console.log('@@ styles:', styles);
 
 const Resume = ({ resume }) => {
   const {
@@ -58,4 +57,76 @@ const Resume = ({ resume }) => {
   );
 };
 
-export default Resume;
+function ResumeWithQuery() {
+  const { resumeYaml: resume } = useStaticQuery(graphql`
+    {
+      resumeYaml {
+        basics {
+          email
+          name
+          label
+          phone
+          url
+          summary
+          profiles {
+            network
+            url
+            username
+          }
+        }
+        work {
+          description
+          endDate(formatString: "MMM, YYYY")
+          highlights
+          location
+          name
+          startDate(formatString: "MMM, YYYY")
+          position
+          summary
+          url
+        }
+        education {
+          area
+          courses
+          endDate(formatString: "MMM, YYYY")
+          cgpa
+          institution
+          startDate(formatString: "MMM, YYYY")
+          studyType
+        }
+        awards {
+          awarder
+          date(formatString: "MMM, YYYY")
+          summary
+          title
+        }
+        publications {
+          name
+          publisher
+          releaseDate(formatString: "MMM, YYYY")
+          summary
+          url
+        }
+        skills {
+          keywords
+          level
+          name
+        }
+        languages {
+          fluency
+          language
+        }
+        interests {
+          keywords
+          name
+        }
+        declaration {
+          name
+          quote
+        }
+      }
+    }
+  `);
+  return <Resume resume={resume} />;
+}
+export default ResumeWithQuery;
