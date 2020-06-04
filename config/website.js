@@ -3,6 +3,7 @@ module.exports = {
   siteTitleAlt: 'The personal website of Sahil Sharma', // Alternative Site title for SEO
   siteTitleShort: 'sahilsharma', // short_name for manifest
   siteUrl: 'https://sahilsharma.surge.sh/', // Domain of your site. No trailing slash!
+  siteName: 'Portfolio',
   lang: 'en', // Language Tag on <html> element
   pathPrefix: '/',
   siteDescription:
