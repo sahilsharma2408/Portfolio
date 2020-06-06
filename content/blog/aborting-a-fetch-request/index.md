@@ -8,7 +8,8 @@ cover: './cover.png'
 keywords: Fetch,Abort,AbortController,AbortSignal,Cancel,Promise,Performance,Cancelable
 ---
 
-`AbortController` is used to abort a fetch request. [Check out this demo](#demo).
+`AbortController` is used to abort a fetch request. 
+<!-- [Check out this demo](#demo). -->
 
 As of today, there are two primary ways to make a request in the browser. `XMLHttpRequest` and `fetch`.
 `XMLHttpRequest` existed in browsers for a long time. the `fetch` was introduced with `ES6`.
@@ -97,9 +98,9 @@ The request fails with the error `new DOMException('Aborted', 'AbortError')`.
 
 ![Aborted fetch request in the devtool](./fetch-devtool-cancelled.png)
 
-## Demo
+<!-- ## Demo -->
 
-https://codesandbox.io/s/abortable-fetch-using-abortcontroller-yd07c
+<!-- https://codesandbox.io/s/abortable-fetch-using-abortcontroller-yd07c -->
 
 > `AbortController` is not only for fetch. it’s a generic API to abort asynchronous tasks.
 > Eg: You can use it to [implement a cancelable promise][cancel promise].
@@ -114,7 +115,7 @@ You can use either of these polyfills to make it work.
 https://www.npmjs.com/package/abort-controller
 https://www.npmjs.com/package/abortcontroller-polyfill
 
-That's it for now. If you enjoyed reading this post, give me a follow [@ganapativs](https://twitter.com/ganapativs) 😬
+<!-- That's it for now. If you enjoyed reading this post, give me a follow [@ganapativs](https://twitter.com/ganapativs) 😬 -->
 
 ---
 
@@ -122,10 +123,10 @@ That's it for now. If you enjoyed reading this post, give me a follow [@ganapati
 
 - [https://developers.google.com/web/updates/2017/09/abortable-fetch](https://developers.google.com/web/updates/2017/09/abortable-fetch)
 - [https://github.com/whatwg/fetch/issues/27](https://github.com/whatwg/fetch/issues/27)
-
+<!-- 
 **Thanks:**
 
-- [Photo by Cherry Laithang on Unsplash](https://unsplash.com/photos/NmPpz1jA_JE)
+- [Photo by Cherry Laithang on Unsplash](https://unsplash.com/photos/NmPpz1jA_JE) -->
 
 ---
 
