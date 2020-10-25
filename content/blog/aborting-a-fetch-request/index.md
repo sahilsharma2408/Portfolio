@@ -8,13 +8,13 @@ cover: './cover.png'
 keywords: Fetch,Abort,AbortController,AbortSignal,Cancel,Promise,Performance,Cancelable
 ---
 
-`AbortController` is used to abort a fetch request. 
+**AbortController** is used to abort a fetch request. 
 <!-- [Check out this demo](#demo). -->
 
-As of today, there are two primary ways to make a request in the browser. `XMLHttpRequest` and `fetch`.
-`XMLHttpRequest` existed in browsers for a long time. the `fetch` was introduced with `ES6`.
+As of today, there are two primary ways to make a request in the browser. **XMLHttpRequest** and **fetch**.
+**XMLHttpRequest** existed in browsers for a long time. the **fetch** was introduced with **ES6**.
 
-`XMLHttpRequest` was always abortable. An abortable `XHR` request looks something like this.
+**XMLHttpRequest** was always abortable. An abortable **XHR** request looks something like this.
 
 ```javascript
 let xhr = new XMLHttpRequest();
@@ -29,12 +29,12 @@ abortButton.addEventListener('click', function() {
 });
 ```
 
-`fetch` wasn't abortable when it was initially introduced.
+**fetch** wasn't abortable when it was initially introduced.
 the [initial GitHub issue for aborting a fetch request][abort fetch issue] was opened initially in 2015.
-There were also many attempts to solve this problem outside of the `fetch` spec
+There were also many attempts to solve this problem outside of the **fetch** spec
 like [cancelable-promises][cancelable-promises-github] and other [hacks][cancelable-promise-hack].
 
-But, we now finally have the generic [`AbortController`][abort controller MDN] and the `AbortSignal` APIs.
+But, we now finally have the generic [**AbortController**][abort controller MDN] and the **AbortSignal** APIs.
 These APIs are provided by the [DOM standard][DOM standard], not by the language itself.
 
 ## What is an AbortController?
@@ -44,9 +44,9 @@ These APIs are provided by the [DOM standard][DOM standard], not by the language
 As described in the [DOM spec documentation][DOM standard]
 
 > Though promises do not have a built-in aborting mechanism, many APIs using them require
-> abort semantics. `AbortController` is meant to support these requirements by providing an `abort()`
-> method that toggles the state of a corresponding `AbortSignal` object. The API which wishes to
-> support aborting can accept an `AbortSignal` object, and use its state to determine how to proceed.
+> abort semantics. **AbortController** is meant to support these requirements by providing an **abort()**
+> method that toggles the state of a corresponding **AbortSignal** object. The API which wishes to
+> support aborting can accept an **AbortSignal** object, and use its state to determine how to proceed.
 
 ```js
 // Create a instance of the AbortController
@@ -64,7 +64,7 @@ controller.abort();
 
 ## How to abort fetch request using AbortController?
 
-`fetch` accepts `AbortSignal` as part of the second argument.
+**fetch** accepts **AbortSignal** as part of the second argument.
 
 ```js
 const controller = new AbortController();
@@ -91,10 +91,10 @@ setTimeout(() => {
 }, 2000);
 ```
 
-Aborting the `fetch` aborts both the request and response.
-The request fails with the error `new DOMException('Aborted', 'AbortError')`.
+Aborting the **fetch** aborts both the request and response.
+The request fails with the error **new DOMException('Aborted', 'AbortError')**.
 
-> The same `AbortSignal`(`signal` in the above example) can be used to abort multiple `fetch` requests.
+> The same **AbortSignal**(**signal** in the above example) can be used to abort multiple **fetch** requests.
 
 ![Aborted fetch request in the devtool](./fetch-devtool-cancelled.png)
 
@@ -102,14 +102,14 @@ The request fails with the error `new DOMException('Aborted', 'AbortError')`.
 
 <!-- https://codesandbox.io/s/abortable-fetch-using-abortcontroller-yd07c -->
 
-> `AbortController` is not only for fetch. it’s a generic API to abort asynchronous tasks.
+> **AbortController** is not only for fetch. it’s a generic API to abort asynchronous tasks.
 > Eg: You can use it to [implement a cancelable promise][cancel promise].
 
 ## Browser support and polyfill
 
 <CaniuseEmbed featureName="abortcontroller" />
 
-Many older browsers don't [support][abortcontroller caniuse] the `AbortController` and the `AbortSignal` APIs.
+Many older browsers don't [support][abortcontroller caniuse] the **AbortController** and the **AbortSignal** APIs.
 You can use either of these polyfills to make it work.
 
 https://www.npmjs.com/package/abort-controller
