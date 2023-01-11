@@ -55,7 +55,7 @@
     "gatsby-plugin-sharp": "^2.6.10",
     "gatsby-plugin-typography": "^2.3.24",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.8.13",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.4",
     "gatsby-transformer-yaml": "^2.2.23",
     "react": "^16.13.1",
